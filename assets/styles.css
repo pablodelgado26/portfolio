@@ -679,18 +679,22 @@
     }
   }
 
-  @media only screen and (min-width: 769px) {
-    /* CSS for desktop devices */
-    .wrapper {
-      grid-template-columns: repeat(3, 1fr);
+  @media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
     }
-    
-    .testimonial-item {
-      margin: 0 2rem;
+
+    header p {
+        font-size: 1rem;
     }
-    
-    .contact {
-      padding-left: 40rem;
-      padding-right: 40rem;
+
+    .container {
+        width: 100%;
+        padding: 1rem 0;
     }
-  }
+
+    .beautiful-button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
