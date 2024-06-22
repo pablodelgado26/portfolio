@@ -659,25 +659,8 @@ span {
     font-size: 1.2rem;
 }
 
-/* Refatoração do CSS para layout mobile com melhor organização e evitando repetições */
 
-/* Estilos para dispositivos com largura máxima de 768px */
-@media only screen and (max-width: 768px) {
-    .wrapper {
-        grid-template-columns: 1fr; /* Coluna única para o layout */
-    }
-
-    .testimonial-item,
-    .contact {
-        margin: 0; /* Remove margens */
-    }
-
-    .contact {
-        padding-left: 2rem;
-        padding-right: 2rem; /* Espaçamento interno para o elemento de contato */
-    }
-}
-
+/* Estilos para dispositivos com largura máxima de 600px */
 /* Estilos para dispositivos com largura máxima de 600px */
 @media (max-width: 600px) {
     header h1 {
@@ -687,16 +670,30 @@ span {
     header p {
         font-size: 2rem; /* Tamanho de fonte reduzido para o parágrafo */
     }
-    /* Para centralizar e ajustar o tamanho dos itens, removendo margens e ajustando o grid */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+
     .container {
         width: 100%; /* Largura total */
-        padding: 1rem 10; /* Espaçamento interno vertical */
+        padding: 1rem; /* Correção: Espaçamento interno vertical ajustado */
     }
 
     .beautiful-button {
-        padding: 10px 20px; /* Espaçamento interno para o botão */
-        font-size: 16px; /* Tamanho de fonte para o botão */
+        font-size: 1.5rem; /* Aumenta o tamanho da fonte para o botão */
+        padding: 15px 30px; /* Aumenta o espaçamento interno para o botão */
+        margin: 0 auto; /* Centraliza o botão */
+        display: block; /* Faz o botão ocupar a linha inteira */
+    }
+
+    /* Adicionando mais regras para outros elementos para melhorar a responsividade */
+    .menu {
+        display: none; /* Esconde o menu tradicional e pode-se optar por um menu hambúrguer */
+    }
+
+    .footer {
+        padding: 2rem 1rem; /* Aumenta o padding do rodapé para melhor visualização */
+    }
+
+    .service-item {
+        margin-bottom: 2rem; /* Aumenta a margem entre itens de serviço para evitar sobreposição */
     }
 }
 
