@@ -671,7 +671,12 @@ span {
     .contact {
         margin: 0; /* Remove margens */
     }
-
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta o tamanho dos itens para ocuparem o espaço disponível, centralizando-os e sem margens */
+        gap: 20px; /* Espaçamento entre os itens, ajuste conforme necessário */
+        /* Outras propriedades de estilização para .services-grid */
+    }
     .contact {
         padding-left: 2rem;
         padding-right: 2rem; /* Espaçamento interno para o elemento de contato */
@@ -683,7 +688,7 @@ span {
     header h1 {
         font-size: 2.2rem; /* Tamanho de fonte reduzido para o título */
     }
-
+    
     header p {
         font-size: 2rem; /* Tamanho de fonte reduzido para o parágrafo */
     }
