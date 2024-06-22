@@ -659,59 +659,36 @@ span {
     font-size: 1.2rem;
 }
 
-/* Refatoração do CSS para layout mobile com melhor organização e evitando repetições */
-
-/* Estilos para dispositivos com largura máxima de 768px */
-@media only screen and (max-width: 768px) {
-    .wrapper {
-        grid-template-columns: 1fr; /* Coluna única para o layout */
-    }
-
-    .testimonial-item,
-    .contact {
-        margin: 0; /* Remove margens */
-    }
-
-    .contact {
-        padding-left: 2rem;
-        padding-right: 2rem; /* Espaçamento interno para o elemento de contato */
-    }
-}
-
-/* Estilos para dispositivos com largura máxima de 600px */
-/* Estilos para dispositivos com largura máxima de 600px */
 @media (max-width: 600px) {
     header h1 {
-        font-size: 30rem; /* Tamanho de fonte reduzido para o título */
+        font-size: 1.8rem; /* Ajuste para melhor leitura */
     }
 
     header p {
-        font-size: 2rem; /* Tamanho de fonte reduzido para o parágrafo */
+        font-size: 1.2rem; /* Ajuste para melhor leitura */
     }
 
     .container {
-        width: 100%; /* Largura total */
-        padding: 1rem; /* Correção: Espaçamento interno vertical ajustado */
+        padding: 0.5rem; /* Reduz o padding para aproveitar mais o espaço */
     }
 
-    .timeline-items {
-        font-size: 1.5rem; /* Aumenta o tamanho da fonte para o botão */
-        padding: 15px 30px; /* Aumenta o espaçamento interno para o botão */
-        margin: 0 auto; /* Centraliza o botão */
-        display: block; /* Faz o botão ocupar a linha inteira */
+    .beautiful-button {
+        font-size: 1rem; /* Ajuste no tamanho da fonte */
+        padding: 10px 20px; /* Reduz o padding para melhor ajuste */
+        width: auto; /* Permite que o botão ajuste sua largura */
+        margin: 10px auto; /* Centraliza o botão */
     }
 
-    /* Adicionando mais regras para outros elementos para melhorar a responsividade */
     .menu {
-        display: none; /* Esconde o menu tradicional e pode-se optar por um menu hambúrguer */
+        display: block; /* Mostra o menu, ajuste se for usar um menu hambúrguer */
     }
 
     .footer {
-        padding: 2rem 1rem; /* Aumenta o padding do rodapé para melhor visualização */
+        padding: 1rem 0.5rem; /* Ajuste no padding para melhor visualização */
     }
 
     .service-item {
-        margin-bottom: 2rem; /* Aumenta a margem entre itens de serviço para evitar sobreposição */
+        margin-bottom: 1rem; /* Reduz a margem para economizar espaço */
     }
 }
 
