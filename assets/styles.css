@@ -681,16 +681,16 @@ span {
 /* Estilos para dispositivos com largura máxima de 600px */
 @media (max-width: 600px) {
     header h1 {
-        font-size: 1.8rem; /* Tamanho de fonte reduzido para o título */
+        font-size: 2.2rem; /* Tamanho de fonte reduzido para o título */
     }
 
     header p {
-        font-size: 1rem; /* Tamanho de fonte reduzido para o parágrafo */
+        font-size: 2rem; /* Tamanho de fonte reduzido para o parágrafo */
     }
 
     .container {
         width: 100%; /* Largura total */
-        padding: 1rem 0; /* Espaçamento interno vertical */
+        padding: 1rem 10; /* Espaçamento interno vertical */
     }
 
     .beautiful-button {
