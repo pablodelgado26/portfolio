@@ -659,42 +659,42 @@ span {
     font-size: 1.2rem;
 }
 
+/* Refatoração do CSS para layout mobile com melhor organização e evitando repetições */
+
+/* Estilos para dispositivos com largura máxima de 768px */
 @media only screen and (max-width: 768px) {
-    /* CSS for mobile devices */
     .wrapper {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Coluna única para o layout */
     }
 
-    .testimonial-item {
-        margin: 0;
+    .testimonial-item,
+    .contact {
+        margin: 0; /* Remove margens */
     }
 
     .contact {
-      margin: 0;
+        padding-left: 2rem;
+        padding-right: 2rem; /* Espaçamento interno para o elemento de contato */
     }
-    
-    .contact {
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
-  }
+}
 
-  @media (max-width: 600px) {
+/* Estilos para dispositivos com largura máxima de 600px */
+@media (max-width: 600px) {
     header h1 {
-        font-size: 1.8rem;
+        font-size: 1.8rem; /* Tamanho de fonte reduzido para o título */
     }
 
     header p {
-        font-size: 1rem;
+        font-size: 1rem; /* Tamanho de fonte reduzido para o parágrafo */
     }
 
     .container {
-        width: 100%;
-        padding: 1rem 0;
+        width: 100%; /* Largura total */
+        padding: 1rem 0; /* Espaçamento interno vertical */
     }
 
     .beautiful-button {
-        padding: 10px 20px;
-        font-size: 16px;
+        padding: 10px 20px; /* Espaçamento interno para o botão */
+        font-size: 16px; /* Tamanho de fonte para o botão */
     }
 }
