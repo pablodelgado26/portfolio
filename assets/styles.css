@@ -662,7 +662,6 @@ span {
 /* Refatoração do CSS para layout mobile com melhor organização e evitando repetições */
 
 /* Estilos para dispositivos com largura máxima de 768px */
-/* Estilos para dispositivos com largura máxima de 768px */
 @media only screen and (max-width: 768px) {
     .wrapper {
         grid-template-columns: 1fr; /* Coluna única para o layout */
@@ -680,9 +679,10 @@ span {
 }
 
 /* Estilos para dispositivos com largura máxima de 600px */
-@media only screen and (max-width: 600px) {
+/* Estilos para dispositivos com largura máxima de 600px */
+@media (max-width: 600px) {
     header h1 {
-        font-size: 2.2rem; /* Tamanho de fonte reduzido para o título */
+        font-size: 30rem; /* Tamanho de fonte reduzido para o título */
     }
 
     header p {
@@ -694,13 +694,14 @@ span {
         padding: 1rem; /* Correção: Espaçamento interno vertical ajustado */
     }
 
-    .beautiful-button {
+    .timeline-items {
         font-size: 1.5rem; /* Aumenta o tamanho da fonte para o botão */
         padding: 15px 30px; /* Aumenta o espaçamento interno para o botão */
         margin: 0 auto; /* Centraliza o botão */
         display: block; /* Faz o botão ocupar a linha inteira */
     }
 
+    /* Adicionando mais regras para outros elementos para melhorar a responsividade */
     .menu {
         display: none; /* Esconde o menu tradicional e pode-se optar por um menu hambúrguer */
     }
@@ -713,3 +714,4 @@ span {
         margin-bottom: 2rem; /* Aumenta a margem entre itens de serviço para evitar sobreposição */
     }
 }
+
