@@ -661,11 +661,11 @@ span {
 
 @media (max-width: 600px) {
     .service-item {
-        font-size: 0.9rem; /* Diminui um pouco o tamanho da fonte para economizar espaço */
-        padding: 8px 16px; /* Ajusta o padding para ser um pouco mais compacto */
-        margin: 8px auto; /* Ajusta as margens para garantir que os itens não fiquem muito juntos ou muito distantes */
+        font-size: 1.8rem; /* Diminui um pouco o tamanho da fonte para economizar espaço */
+        padding: 16px 32px; /* Ajusta o padding para ser um pouco mais compacto */
+        margin: 16px auto; /* Ajusta as margens para garantir que os itens não fiquem muito juntos ou muito distantes */
         /* Se necessário, ajuste a largura para garantir a consistência no layout */
-        width: 90%; /* Exemplo: pode-se ajustar a largura para melhor se adequar ao layout mobile */
+        width: 180%; /* Exemplo: pode-se ajustar a largura para melhor se adequar ao layout mobile */
     }
 }
 
