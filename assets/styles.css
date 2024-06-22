@@ -661,15 +661,24 @@ span {
 
 @media (max-width: 600px) {
     header h1 {
-        font-size: 1.8rem; /* Ajuste para melhor leitura */
+        font-size: 1rem; /* Ajuste no tamanho da fonte */
+        padding: 10px 20px; /* Reduz o padding para melhor ajuste */
+        width: auto; /* Permite que o botão ajuste sua largura */
+        margin: 10px auto; /* Centraliza o botão */
     }
 
     header p {
-        font-size: 1.2rem; /* Ajuste para melhor leitura */
+        font-size: 1rem; /* Ajuste no tamanho da fonte */
+        padding: 10px 20px; /* Reduz o padding para melhor ajuste */
+        width: auto; /* Permite que o botão ajuste sua largura */
+        margin: 10px auto; /* Centraliza o botão */
     }
 
     .container {
-        padding: 0.5rem; /* Reduz o padding para aproveitar mais o espaço */
+        font-size: 1rem; /* Ajuste no tamanho da fonte */
+        padding: 10px 20px; /* Reduz o padding para melhor ajuste */
+        width: auto; /* Permite que o botão ajuste sua largura */
+        margin: 10px auto; /* Centraliza o botão */
     }
 
     .beautiful-button {
@@ -680,15 +689,24 @@ span {
     }
 
     .menu {
-        display: block; /* Mostra o menu, ajuste se for usar um menu hambúrguer */
+        font-size: 1rem; /* Ajuste no tamanho da fonte */
+        padding: 10px 20px; /* Reduz o padding para melhor ajuste */
+        width: auto; /* Permite que o botão ajuste sua largura */
+        margin: 10px auto; /* Centraliza o botão */
     }
 
     .footer {
-        padding: 1rem 0.5rem; /* Ajuste no padding para melhor visualização */
+        font-size: 1rem; /* Ajuste no tamanho da fonte */
+        padding: 10px 20px; /* Reduz o padding para melhor ajuste */
+        width: auto; /* Permite que o botão ajuste sua largura */
+        margin: 10px auto; /* Centraliza o botão */
     }
 
     .service-item {
-        margin-bottom: 1rem; /* Reduz a margem para economizar espaço */
+        font-size: 1rem; /* Ajuste no tamanho da fonte */
+        padding: 10px 20px; /* Reduz o padding para melhor ajuste */
+        width: auto; /* Permite que o botão ajuste sua largura */
+        margin: 10px auto; /* Centraliza o botão */
     }
 }
 
