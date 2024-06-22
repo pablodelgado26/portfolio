@@ -659,6 +659,24 @@ span {
     font-size: 1.2rem;
 }
 
+/* Refatoração do CSS para layout mobile com melhor organização e evitando repetições */
+
+/* Estilos para dispositivos com largura máxima de 768px */
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        grid-template-columns: 1fr; /* Coluna única para o layout */
+    }
+
+    .testimonial-item,
+    .contact {
+        margin: 0; /* Remove margens */
+    }
+
+    .contact {
+        padding-left: 2rem;
+        padding-right: 2rem; /* Espaçamento interno para o elemento de contato */
+    }
+}
 
 /* Estilos para dispositivos com largura máxima de 600px */
 /* Estilos para dispositivos com largura máxima de 600px */
