@@ -133,25 +133,23 @@ span {
 
 .text-animation {
     font-size: 40px;
-    /* Define o tamanho da fonte */
     font-weight: 600;
-    /* Define o peso da fonte */
     min-width: 280px;
-    /* Define a largura mínima */
+    
 }
 
 .text-animation span {
     position: relative;
-    /* Define a posição relativa */
+
 }
 
 .text-animation span::before {
     content: "Desenvolvedor de Sistemas";
-    /* Adiciona um conteúdo */
+
     color: var(--main-color);
-    /* Define a cor do texto */
+
     animation: words 20s infinite;
-    /* Adiciona uma animação */
+
 }
 
 .text-animation span::after {
@@ -241,17 +239,13 @@ span {
     85%,
     100% {
         width: calc(100% + 8px);
-        /* Define a largura de acordo com o conteúdo */
     }
 }
 
 .heading {
     font-size: 2rem;
-    /* Define o tamanho da fonte equivalente a 40px */
     text-align: center;
-    /* Alinha o texto ao centro */
     margin: 5rem 0;
-    /* Adiciona uma margem */
 }
 
 .education {
@@ -659,13 +653,84 @@ span {
     font-size: 1.2rem;
 }
 
-@media (max-width: 600px) {
-    .service-item {
-        font-size: 1.8rem; /* Diminui um pouco o tamanho da fonte para economizar espaço */
-        padding: 16px 32px; /* Ajusta o padding para ser um pouco mais compacto */
-        margin: 16px auto; /* Ajusta as margens para garantir que os itens não fiquem muito juntos ou muito distantes */
-        /* Se necessário, ajuste a largura para garantir a consistência no layout */
-        width: 180%; /* Exemplo: pode-se ajustar a largura para melhor se adequar ao layout mobile */
+@media screen and (max-width: 1020px) {
+    .home-content h1 {
+        font-size: 3rem;
+        font-weight: 500;
+        margin-top: 0.3rem;
+        line-height: 1.2;
+    }
+
+    /*cabeçalho*/
+    .navbar {
+        display: none;
+    }
+
+    .logo {
+        font-size: 2rem;
+        color: var(--text-color);
+        font-weight: 800;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    .timeline-content {
+        border: 0px solid var(--main-color);
+        /* Adiciona uma borda */
+        padding: 30px 10px;
+        /* Adiciona um espaçamento interno */
+        border-radius: 15px;
+
+    }
+    
+    .timeline-content h3 {
+        font-size: 1rem;
+        /* Define o tamanho da fonte equivalente a 16px */
+        font-weight: 300;
+        /* Define o peso da fonte */
+        color: var(--text-color);
+    }
+    
+    .timeline-content p {
+        font-size: 1rem;
+        /* Define o tamanho da fonte equivalente a 16px */
+        font-weight: 300;
+        /* Define o peso da fonte */
+        color: var(--text-color);
+        /* Define a cor do texto */
+        line-height: 0.2;
+        /* Define a altura da linha */
+    }
+    .service-box {
+        background-color: var(--main-color);
+        height: 150px ;
+        border-radius: 10px;
+        border: 0px solid transparent;
+    }
+    
+    .service-box:hover {
+        background: var(--text-color);
+        color: var(--bg-color);
+        border: 3px solid var(--main-color);
+        transform: scale(1.01);
+    }
+    
+    .service-box .service-info {
+        max-height: 10px;
+        padding: 1rem;
+    }
+    
+    .service-info h4 {
+        font-size: 1rem;
+        font-weight: 1000;
+        line-height: 1.2;
+    }
+    
+    .service-info p {
+        font-size: 1rem;
+        font-weight: 1000;
+        max-height: 100px;
+        line-height: 1.0;
+        margin: auto;
     }
 }
 
