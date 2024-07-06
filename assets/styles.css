@@ -732,5 +732,15 @@ span {
         line-height: 1.0;
         margin: auto;
     }
+
+    .footer ul {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+        font-size: 1.0rem;
+        line-height: 1.6;
+        text-align: center;
+    }
+
 }
 
